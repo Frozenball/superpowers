@@ -11,7 +11,7 @@ patch()
 
 [1, 2, 3].map(_ * 3 + 3)._(print)
 # [6, 9, 12]
-print(['Hello', 'World'].map(_.upper).mkString(', '))
+['Hello', 'World'].map(_.upper).mkString(', ')._(print)
 # HELLO, WORLD
 [1, 2, 3, 4, 5].filter(_ > 3).map(print)
 # 4
