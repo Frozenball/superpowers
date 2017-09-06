@@ -5,6 +5,8 @@ def _map(self, fn):
 
 def patch():
     curse(object, '_', lambda self, fn: fn(self))
+    curse(tuple, '_', lambda self, fn: fn(*self))
+    curse(object, 'together', lambda self, fn: (*self, fn) if isinstance(self, tuple) else (self, fn))
     for x in [list, tuple]:
         curse(x, 'mkString', lambda self, val=', ': val.join(self))
     curse(list, 'map', lambda self, fn: list(map(fn, self)))
