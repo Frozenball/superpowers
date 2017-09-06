@@ -14,6 +14,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms='any',
+    install_requires=['forbiddenfruit'],
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
