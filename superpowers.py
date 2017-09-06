@@ -4,6 +4,8 @@ def _map(self, fn):
     return list(map(fn, self))
 
 def patch():
+    for x in [list, tuple]:
+        curse(x, 'mkString', lambda self, val=', ': val.join(self))
     curse(list, 'map', lambda self, fn: list(map(fn, self)))
     curse(tuple, 'map', lambda self, fn: tuple(map(fn, self)))
     curse(list, 'filter', lambda self, fn: list(filter(fn, self)))
