@@ -6,7 +6,7 @@ setup(
     description=(
         'Scala-like map for Python, do [1, 2, 3].map(_*3)'
     ),
-    version='0.1',
+    version='0.1.1',
     license='BSD',
     author='Teemu',
     author_email='teemu.on.ihminen@gmail.com',
