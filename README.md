@@ -17,5 +17,5 @@ patch()
 # 4
 # 5
 (1000).together(3001).together(1000)._(range)._(list).map(str).mkString(', ').together('are big numbers')._(print)
-# 2000, 3000, 4000 are big numbers
+# 1000, 2000, 3000 are big numbers
 ````
