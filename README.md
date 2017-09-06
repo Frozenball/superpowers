@@ -9,10 +9,8 @@ The following is valid code after using this library:
 from superpowers import patch, _
 patch()
 
-[1, 2, 3].map(_ * 3 + 3).map(lambda x: print(x))
-# 6
-# 9
-# 12
+[1, 2, 3].map(_ * 3 + 3)._(print)
+# [6, 9, 12]
 print(['Hello', 'World'].map(_.upper).mkString(', '))
 # HELLO, WORLD
 [1, 2, 3, 4, 5].filter(_ > 3).map(print)
